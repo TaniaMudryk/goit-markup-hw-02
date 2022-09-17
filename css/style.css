@@ -1,12 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #757575;
+}
+
 :root {
   --color-titles: #212121;
   --color-subtitles: #757575;
   --color-accent: #2196f3;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-subtitles);
 }
 
 .visually-hidden {
@@ -35,7 +35,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-accent);
 }
-.logo-studio {
+.logo-header-studio {
   color: #000000;
 }
 
@@ -104,14 +104,11 @@ body {
 }
 
 .hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
   cursor: pointer;
 }
 
@@ -141,7 +138,6 @@ body {
 }
 
 .service-title-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -179,18 +175,20 @@ body {
 }
 
 .team-profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-subtitles);
 }
 
 /*-----------FOOTER----------*/
 
 .footer {
   background: #2f303a;
+}
+
+.logo-footer-studio {
+  color: #ffffff;
 }
 
 .footer-address {
@@ -221,6 +219,8 @@ body {
 }
 
 .portfolio-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -244,9 +244,7 @@ body {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--color-subtitles);
 }
