@@ -1,8 +1,12 @@
+:root {
+  --color-titles: #212121;
+  --color-subtitles: #757575;
+  --color-accent: #2196f3;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #757575;
-}
-:root {
+  color: var(--color-subtitles);
 }
 
 .visually-hidden {
@@ -18,55 +22,21 @@ body {
   overflow: hidden;
 }
 
-.btn {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn:hover,
-.btn:focus {
-  color: #2196f3;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.title-second {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.title-third {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19x;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 /*-----------HEADER----------*/
 
 .header {
 }
 
 .logo {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--color-accent);
+}
+.logo-studio {
+  color: #000000;
 }
 
 .header-list {
@@ -80,7 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--color-accent);
 }
 
 .header-tel {
@@ -88,7 +58,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--color-subtitles);
 }
 
 .header-link {
@@ -96,12 +66,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color-titles);
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--color-accent);
 }
 
 .list {
@@ -114,7 +84,7 @@ body {
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--color-accent);
 }
 
 /*-----------HERO----------*/
@@ -135,15 +105,24 @@ body {
 
 .hero-btn {
   font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
   align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--color-accent);
 }
 
 /*-----------SERVICE----------*/
 
 .service {
-  background: #f5f5f5;
 }
 
 .service-list {
@@ -153,13 +132,29 @@ body {
 }
 
 .service-title-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--color-titles);
 }
 
 .service-title-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.service-title {
+.service-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-titles);
 }
 
 /*-----------TEAM----------*/
@@ -168,36 +163,34 @@ body {
   background: #f5f4fa;
 }
 
-.team-title {
-}
-
 .team-list {
-}
-
-.list {
 }
 
 .team-item {
 }
 
 .team-title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-titles);
 }
 
-.team-text {
+.team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-subtitles);
 }
 
 /*-----------FOOTER----------*/
 
 .footer {
   background: #2f303a;
-}
-
-.logo {
-}
-
-.link {
 }
 
 .footer-address {
@@ -229,6 +222,31 @@ body {
 
 .portfolio-btn {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color-titles);
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-accent);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-titles);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-subtitles);
 }
